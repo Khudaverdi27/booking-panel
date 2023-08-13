@@ -1,0 +1,98 @@
+.dateTime
+  display: flex
+
+.wrapper
+  width: 45%
+  background: #fff
+  margin-left: 40px
+  header
+    display: flex
+    align-items: center
+    padding: 25px 30px 10px
+    justify-content: center
+    .icons
+      display: flex
+      span
+        height: 38px
+        width: 38px
+        margin: 0 1px
+        cursor: pointer
+        text-align: center
+        line-height: 38px
+        font-size: 1.9rem
+        user-select: none
+        border-radius: 50%
+      &:last-child
+        margin-right: -10px
+        &:hover
+          background: #f2f2f2
+    .current-date
+      font-size: 14px
+      font-weight: 400
+
+      margin: 8px 30px 0 30px
+.calendar
+  ul
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    text-align: center
+  li
+    padding: 15px
+    width: calc(100% / 7)
+    font-size: 13px
+
+  .weeks li
+    font-weight: 400
+    cursor: default
+    color: #C8C9CC
+    border-bottom: 1px solid #f9f6f6
+
+  .days li
+    z-index: 1
+    cursor: pointer
+    position: relative
+    font-size: 15px
+.inactive
+  color: #fff
+  &::before
+    background-color: #fff
+.active
+  color: #fff
+
+  &::before
+    position: absolute
+    content: ""
+    left: 50%
+    top: 50%
+    height: 40px
+    width: 40px
+    z-index: -1
+    transform: translate(-50%, -50%)
+    background-color: #6C70DC
+
+.wrapper-right
+  margin-top: 72px
+  width: 45%
+  background: #fff
+  margin-left: 40px
+
+.header-top
+  text-align: center
+  border-bottom: 1px solid #f9f6f6
+  padding: 12px
+  color: #6C70DC
+
+.time-boxes
+  display: flex
+  justify-content: space-evenly
+
+.box
+  margin-top: 20px
+  font-size: 14px
+  padding: 20px 40px
+  background-color: #ECEFF2
+
+.card-input-element:checked+.card-input .box
+  color: #ffff
+  background-color: #53D56C

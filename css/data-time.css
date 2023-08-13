@@ -1,0 +1,119 @@
+.dateTime {
+  display: flex;
+}
+
+.wrapper {
+  width: 45%;
+  background: #fff;
+  margin-left: 40px;
+}
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: center;
+}
+.wrapper header .icons {
+  display: flex;
+}
+.wrapper header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 50%;
+}
+.wrapper header .icons:last-child {
+  margin-right: -10px;
+}
+.wrapper header .icons:last-child:hover {
+  background: #f2f2f2;
+}
+.wrapper header .current-date {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px 30px 0 30px;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar li {
+  padding: 15px;
+  width: 14.2857142857%;
+  font-size: 13px;
+}
+.calendar .weeks li {
+  font-weight: 400;
+  cursor: default;
+  color: #C8C9CC;
+  border-bottom: 1px solid #f9f6f6;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+}
+
+.inactive {
+  color: #fff;
+}
+.inactive::before {
+  background-color: #fff;
+}
+
+.active {
+  color: #fff;
+}
+.active::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-color: #6C70DC;
+}
+
+.wrapper-right {
+  margin-top: 72px;
+  width: 45%;
+  background: #fff;
+  margin-left: 40px;
+}
+
+.header-top {
+  text-align: center;
+  border-bottom: 1px solid #f9f6f6;
+  padding: 12px;
+  color: #6C70DC;
+}
+
+.time-boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 20px 40px;
+  background-color: #ECEFF2;
+}
+
+.card-input-element:checked + .card-input .box {
+  color: white;
+  background-color: #53D56C;
+}/*# sourceMappingURL=data-time.css.map */

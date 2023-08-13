@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.nav-menu {
+  height: 100vh;
+  width: 230px;
+  background-color: #292D32;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20px 0;
+}
+nav ul li {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px 0 0 15px;
+}
+nav ul li .menu-panel .circle:hover {
+  background-color: #53D56C;
+}
+nav ul li .menu-panel .text:active {
+  color: #FAFAFA;
+}
+nav ul li .menu-panel .text:hover {
+  color: #53D56C;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #686e73;
+  color: #FAFAFA;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.text {
+  color: #626C76;
+  font-size: 14px;
+}
+
+.content {
+  width: 100%;
+  background-color: #F5F7FA;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F7FA;
+  padding: 30px;
+  border-bottom: 1px solid #E3EAF3;
+}
+header h3 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #292D32;
+}
+header h3 i {
+  color: #ADBFC7;
+}
+
+.user-card {
+  position: relative;
+  display: flex;
+  height: 80px;
+  background-color: #FAFAFA;
+}
+
+.user-avatar {
+  padding: 20px;
+}
+
+.user-info {
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #292D32;
+}
+
+.user-description {
+  color: #828F9A;
+  font-size: 12px;
+}
+
+.card-input-element {
+  display: none;
+}
+
+.card-input {
+  margin: 10px;
+}
+
+.card-input:hover {
+  cursor: pointer;
+}
+
+.menu-panel {
+  display: flex;
+  width: 100%;
+}
+
+.card-input-element:checked + .checked-border {
+  border: 1px solid #53D56C;
+}
+
+.card-input-element:checked + .menu-panel.circle {
+  background-color: #53D56C;
+}
+
+.card-input-element:checked + .menu-panel .text {
+  color: #53D56C;
+}
+
+footer {
+  display: flex;
+  background-color: #F5F7FA;
+  padding: 30px;
+  border-top: 1px solid #E3EAF3;
+  position: fixed;
+  width: 85%;
+  bottom: 0;
+  justify-content: space-between;
+}
+footer button {
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  width: 59px;
+  cursor: pointer;
+  padding: 7px;
+  background-color: #6C70DC;
+}
+
+#nextBtn {
+  margin-left: auto;
+}
+
+#prevBtn {
+  background-color: #8F9CA7;
+}
+
+#cnfrmBtn {
+  width: 143px;
+}
+
+.price-card {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 26px;
+  color: #53D56C;
+}/*# sourceMappingURL=style.css.map */

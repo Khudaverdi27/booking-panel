@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Poppins', sans-serif
+
+$color: ("white":#FAFAFA,"white2":#F5F7FA,"green":#53D56C,"grey":#292D32)
+
+.d-none
+  display: none
+
+.container
+  display: flex
+  position: relative
+
+.nav-menu
+  height: 100vh
+  width: 230px
+  background-color: map-get($color,"grey" )
+
+nav
+  ul
+    list-style: none
+    margin: 20px 0
+    li
+      display: flex
+      text-decoration: none
+      cursor: pointer
+      padding: 20px 0 0 15px
+      .menu-panel
+        .circle
+          &:hover
+            background-color: map-get($color,"green" )
+        .text
+          &:active
+            color: map-get($color,"white" )
+          &:hover
+            color: map-get($color,"green" )
+
+.circle
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 24px
+  width: 25px
+  border-radius: 50%
+  background-color: #686e73
+  color: map-get($color,"white" )
+  font-size: 12px
+  margin-right: 10px
+
+.text
+  color: #626C76
+  font-size: 14px
+
+.content
+  width: 100%
+  background-color: map-get($color,"white2" )
+
+header
+  display: flex
+  justify-content: space-between
+  background-color: map-get($color,"white2" )
+  padding: 30px
+  border-bottom: 1px solid #E3EAF3
+  h3
+    font-weight: 500
+    font-size: 18px
+    color: map-get($color,"grey" )
+
+    i
+      color: #ADBFC7
+
+.user-card
+  position: relative
+  display: flex
+  height: 80px
+  background-color: map-get($color,"white" )
+
+.user-avatar
+  padding: 20px
+
+.user-info
+  padding-top: 20px
+  font-weight: 500
+
+.user-name
+  font-size: 14px
+  font-weight: 500
+  color: map-get($color,"grey" )
+
+.user-description
+  color: #828F9A
+  font-size: 12px
+
+.card-input-element
+  display: none
+
+.card-input
+  margin: 10px
+
+.card-input
+  &:hover
+    cursor: pointer
+
+.menu-panel
+  display: flex
+  width: 100%
+
+.card-input-element
+  &:checked+
+    .checked-border
+      border: 1px solid map-get($color,"green" )
+
+.card-input-element
+  &:checked+.menu-panel.circle
+    background-color: map-get($color,"green" )
+
+.card-input-element
+  &:checked+.menu-panel .text
+    color: map-get($color,"green" )
+
+footer
+  display: flex
+  background-color: map-get($color,"white2" )
+  padding: 30px
+  border-top: 1px solid #E3EAF3
+  position: fixed
+  width: 85%
+  bottom: 0
+  justify-content: space-between
+  button
+    border: none
+    font-size: 12px
+    font-weight: 600
+    color: white
+    width: 59px
+    cursor: pointer
+    padding: 7px
+    background-color: #6C70DC
+
+#nextBtn
+  margin-left: auto
+
+#prevBtn
+  background-color: #8F9CA7
+
+#cnfrmBtn
+  width: 143px
+
+.price-card
+  position: absolute
+  right: 20px
+  top: 25px
+  font-size: 26px
+  color: map-get($color,"green" )
